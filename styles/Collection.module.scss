@@ -1,0 +1,9 @@
+.photos_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+    
+    img{
+        align-self: center;
+    }
+}
