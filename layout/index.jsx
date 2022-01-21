@@ -1,11 +1,12 @@
-import Link from 'next'
+import Link from 'next/Link'
 import styles from './index.module.scss'
 
-function DefaultLayout(){
+function DefaultLayout({children}){
 
     return(
-        <>
+        <>       
         <div className={styles.nav}>
+            <h1>SF</h1>
             <ul>               
                 <li>
                     <Link href='/'>
@@ -19,7 +20,7 @@ function DefaultLayout(){
                 </li>                             
             </ul>
         </div>
-        {/*<main>{children}</main>*/}
+        <main>{children}</main>
         <div className={styles.footer}></div>
         </>
     );

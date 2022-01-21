@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import LayoutDefault from './../layout/index'
 import styles from "../styles/Collection.module.scss";
 
 const weddingDress=[
@@ -12,27 +13,25 @@ const weddingDress=[
  function Collection () {
 
     const[photos, setPhotos] = useState([]);
+    
 
     useEffect(() => {
         setPhotos(weddingDress);
     }, []);
 
     return(
-        <>
-            <div className={styles.photos_wrapper}>
-                {photos.map((photo) => (
-                    <img
-                  src={photo}
-                  alt={photo}
-                  width="300"
-                  />
-                ))}
-            </div>
-
-    
-       </>
-    )
-      
-     
+        <LayoutDefault>
+                <div className={styles.photos_wrapper}>
+                    {photos.map((photo) => (
+                        <img
+                        src={photo}
+                        alt={photo}
+                        width="300"
+                    />
+                    ))}
+                </div>
+            </LayoutDefault>
+    )     
 }
+
 export default Collection;
