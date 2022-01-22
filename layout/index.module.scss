@@ -1,7 +1,7 @@
 @use "./../variables.scss/colors.scss";
 @use "./../variables.scss/fonts.scss";
 
-.nav{
+.header{
     height: 250px;
     background: linear-gradient(90deg, rgba(234,195,191,1) 0%, rgba(243,214,213,1) 17%, rgba(219,172,166,1) 82%);
     font-family: fonts.$Rfont;
@@ -21,11 +21,46 @@
        
         
     }
+
+}
+    
+.drop_down_menù{
+    display:flex;
+    position: relative;
+    justify-content: center;   
+
+        
+
     ul{
+        
+        width: 200px;
         margin: 0;
         padding: 0;
         list-style-type: none;
+        text-align: left;
+        border: 1px solid gray;
+        background-color: colors.$white;        
         
+        
+           
+    }
+
+}
+
+.link_menu{
+    
+    li{
+        border-bottom: 1px solid colors.$gray;
+    
     }
 }
 
+.go_to{
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        padding-top: 3px;
+        padding-left: 5px;
+    }
+}

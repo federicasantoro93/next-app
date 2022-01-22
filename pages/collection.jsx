@@ -24,6 +24,7 @@ const weddingDress=[
                 <div className={styles.photos_wrapper}>
                     {photos.map((photo) => (
                         <img
+                        key={photo}
                         src={photo}
                         alt={photo}
                         width="300"
