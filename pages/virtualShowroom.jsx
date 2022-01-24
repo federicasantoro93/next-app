@@ -1,6 +1,7 @@
 import LayoutDefault from '../layout/index';
 import { Hero } from '../components/hero/Hero';
-import {Video} from '../components/video/index'
+import {Video} from '../components/video/index';
+import {Map} from '../components/map/index';
 import styles from './../styles/VirtualShowroom.module.scss'
 
 
@@ -9,9 +10,13 @@ export default function VirtualShowRoom() {
   
       <LayoutDefault>        
         <div className={styles.bgVideo}>
+        <h2>OUR VIRTUAL SHOWROOM</h2>
         <Video src={'/virtualShowroom.mp4'}/>
         </div>
-       
+        <div className={styles.bgMap}>
+        <h2>WHERE WE ARE <img src="https://img.icons8.com/officel/22/000000/place-marker--v1.png"/></h2>
+        <Map src={"https://www.google.com/maps/d/u/0/embed?mid=1NukkJCY_zetuCmKTseE1TOYgQmR3Pgn3&ehbc=2E312F"}/>
+        </div>
         
         
         {/*<iframe className={styles.iframe} src="https://www.google.com/maps/d/u/0/embed?mid=1NukkJCY_zetuCmKTseE1TOYgQmR3Pgn3&ehbc=2E312F" width="640" height="auto"></iframe>*/}

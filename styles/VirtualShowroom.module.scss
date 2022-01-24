@@ -1,5 +1,36 @@
+@use "./../variables.scss/colors.scss";
+@use "./../variables.scss/fonts.scss";
 
 .bgVideo{
     display: flex;
+    text-align: center;
+    flex-direction: column;
     background-color: #e9e5e6;
+    padding: 30px 0 30px;
+    h2{
+        color: colors.$gray;
+        font-family: fonts.$Rfont;
+        font-size: 25px;
+        line-height: 0px;
+    }
 }
+.bgMap{
+    display: flex;
+    background-color: white;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px 0 30px;
+    h2{
+        color: colors.$nav_dark_pink;
+        font-family: fonts.$Rfont;
+        font-size: 25px;
+        line-height: 0px;
+        position:relative;
+        img{
+            position:absolute;
+            top: -10px;
+            padding: 0 5px;
+        }
+    }
+}
+

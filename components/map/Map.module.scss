@@ -1,9 +1,9 @@
 .box {
     margin: 0 auto;
-    width: 100%;    
+    width: 90%;    
 }
 
-.videoWrapper {    
+.mapWrapper {    
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
@@ -12,9 +12,9 @@
    
   }
 
-.video {
+.map {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;

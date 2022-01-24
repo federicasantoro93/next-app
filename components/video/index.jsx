@@ -4,7 +4,7 @@ function Video(props) {
   return (   
     <div className={styles.box}>      
     <div className={styles.videoWrapper}>
-      <video controls className={styles.video}>
+      <video controls loop className={styles.video}>
         <source src={props.src} type='video/mp4' width="360" height="auto" />
       </video>  
     </div>
@@ -14,4 +14,4 @@ function Video(props) {
 
 export {Video};
 
-{/*src='/virtualShowroom.mp4'*/}
+/*src='/virtualShowroom.mp4'*/
