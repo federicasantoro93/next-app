@@ -22,7 +22,8 @@ function DefaultLayout({children}){
                             {isMenuVisible && (
                             <ul className={styles.link_menu}>
                                 <li key="Home"><Link href='/'><a>Home</a></Link></li>
-                                <li key="Collection"><Link href='/collection'><a>Collection</a></Link></li> 
+                                <li key="Collection"><Link href='/collection'><a>Collection</a></Link></li>
+                                <li key="VirtualShowroom"><Link href='/virtualShowroom'><a>VirtualShowRoom</a></Link></li> 
                             </ul>)}                          
                     </ul>
             </div>
