@@ -23,7 +23,8 @@ function DefaultLayout({children}){
                             <ul className={styles.link_menu}>
                                 <li key="Home"><Link href='/'><a>Home</a></Link></li>
                                 <li key="Collection"><Link href='/collection'><a>Collection</a></Link></li>
-                                <li key="VirtualShowroom"><Link href='/virtualShowroom'><a>VirtualShowRoom</a></Link></li> 
+                                <li key="VirtualShowroom"><Link href='/virtualShowroom'><a>VirtualShowRoom</a></Link></li>
+                                <li key="Shop"><Link href='/shop'><a>Shop</a></Link></li> 
                             </ul>)}                          
                     </ul>
             </div>

@@ -24,7 +24,7 @@
         color: colors.$nav_dark_pink;
         font-family: fonts.$Rfont;
         font-size: 25px;
-        line-height: 0px;
+        line-height: 30px;
         position:relative;
         img{
             position:absolute;
@@ -34,3 +34,19 @@
     }
 }
 
+.bgCalendar{
+    display: flex;
+    background-color: colors.$nav_light_pink;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0 30px;
+    p{
+        color: colors.$nav_dark_pink;
+        font-family: fonts.$PDfont;
+        font-style: normal;
+        font-size: 20px;
+        
+                      
+    }
+}
