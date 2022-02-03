@@ -1,3 +1,19 @@
-.container{
-    background-color: yellow;
+.productsWrapper{
+    display: flex;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.productCard{
+   
+  grid-row: span 1;
+  grid-column: span 1;  
+    div{
+        width: 300px;
+        height: 300px;
+    }
+    
 }

@@ -1,0 +1,92 @@
+{
+    "products": [
+        {
+        "id": 1,
+        "name": "Garter",
+        "category": "accessories",
+        "price": 50.00,
+        "description": "Garter with floral decorations",
+        "image": "https://images.pexels.com/photos/3727951/pexels-photo-3727951.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+        },
+        {
+        "id": 2,
+        "name": "Crown",
+        "category": "accessories",
+        "price": 180.00,
+        "description": "Crown of flowers",
+        "image": "https://images.pexels.com/photos/8100397/pexels-photo-8100397.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        },
+        {
+        "id": 3,
+        "name": "Shoes",
+        "category": "shoes",
+        "price": 250.00,
+        "description": "Shoes with brilliant",
+        "image": "https://images.pexels.com/photos/4959847/pexels-photo-4959847.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        },
+        {
+        "id": 4,
+        "name": "Shoes",
+        "category": "shoes",
+        "price": 350.00,
+        "description": "Shoes with brilliant",
+        "image": "https://images.pexels.com/photos/4248715/pexels-photo-4248715.jpeg?cs=srgb&dl=pexels-studio-pilot-photography-4248715.jpg&fm=jpg"
+        },
+        {
+        "id": 5,
+        "name": "Wedding rings",
+        "category": "accessories",
+        "price": 300.00,
+        "description": "Wedding rings",
+        "image": "https://images.pexels.com/photos/10074702/pexels-photo-10074702.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        },
+        {
+        "id": 6,
+        "name": "Wedding rings",
+        "category": "accessories",
+        "price": 300.00,
+        "description": "Wedding rings",
+        "image": "https://images.pexels.com/photos/6567716/pexels-photo-6567716.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        },
+        {
+        "id": 7,
+        "name": "Wedding gloves",
+        "category": "accessories",
+        "price": 100.00,
+        "description": "Wedding gloves",
+        "image": "https://images.pexels.com/photos/10074150/pexels-photo-10074150.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        },
+        {
+            "id": 8,
+            "name": "Wedding rings",
+            "category": "accessories",
+            "price": 300.00,
+            "description": "Wedding rings",
+            "image": "https://images.pexels.com/photos/56926/pexels-photo-56926.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            },
+            {
+            "id": 9,
+            "name": "Wedding rings",
+            "category": "accessories",
+            "price": 300.00,
+            "description": "Wedding rings",
+            "image": "https://images.pexels.com/photos/2814808/pexels-photo-2814808.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            },
+            {
+            "id": 10,
+            "name": "Wedding veil",
+            "category": "accessories",
+            "price": 300.00,
+            "description": "Wedding veil",
+            "image": "https://images.pexels.com/photos/4197857/pexels-photo-4197857.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            },
+            {
+                "id": 7,
+                "name": "Wedding gloves",
+                "category": "accessories",
+                "price": 100.00,
+                "description": "Wedding gloves",
+                "image": "https://images.pexels.com/photos/4659801/pexels-photo-4659801.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                }
+    ]
+}

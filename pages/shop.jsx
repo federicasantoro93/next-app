@@ -3,47 +3,74 @@ import { useEffect } from 'react/cjs/react.development';
 import LayoutDefault from './../layout/index';
 import styles from './../styles/Shop.module.scss'
 import { useState } from 'react';
-
-
+import { photoData } from '../photoData';
+import axios from 'axios';
 
 export default function Shop() {
 
-    const[photoData, setPhotoData] = useState([]);
-    
+    const [products, setProducts] = useState([])
+
+    const getAllProducts = async() => {
+        const { data: products } = await axios.get('http://localhost:3000/products')
+        setProducts(products)
+    }
+
     useEffect(() => {
-        getPhotoData();
-        
-    },[]);
-    
-    
-    
+        getAllProducts()
+    },[])
 
-
-
-
-  return (
+     return (
   
       <LayoutDefault>
         <div className={styles.container}>
         <h1>Shop</h1>
         </div>
 
+        {/*Map of photoData 
         <div className={styles.photoWrapper}>
             {
                 photoData.map((pic) =>(
                     <div className={styles.photoList} key={pic.id}>
                         <img
-                            src={pic.src.portrait}
+                            src={pic.image}
                             width={400}
                             height={600}
                             layout='responsive'
-                            alt={pic.url}/>
-                        <h3>{pic.photographer}</h3>
+                            alt={pic.name}/>
+                        <h3>{pic.name}</h3>
                     </div>   
                 ))
             }
         </div>
-      </LayoutDefault>
+        */}
+
+        {/*API*/}
+        <div >
+            <ul className={styles.productsWrapper}>
+                {               
+                    products.map((product) =>(
+                        <li className={styles.productCard} key={product.id}>
+                            <div style=
+                            {{ backgroundImage: `url(${product.image})`,
+                             backgroundPosition: 'center',
+                             backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat'
+                            }} ></div>
+                           { /*<img
+                                src={product.image}
+                                width={200}
+                                height={300}
+                                layout='responsive'
+                                alt={product.description}/>*/}
+                            <h3>{product.name}</h3>
+                            <h3>€{product.price}</h3>   
+                        </li> 
+                    ))
+                }
+            </ul>   
+        </div>
+        
+    </LayoutDefault>
     
   );
 }
