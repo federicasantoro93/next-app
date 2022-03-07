@@ -1,6 +1,8 @@
 import Link from 'next/Link'
 import styles from './index.module.scss'
 import { useState } from 'react';
+import { faBars} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function DefaultLayout({children}){
 
@@ -18,11 +20,11 @@ function DefaultLayout({children}){
             <h1>SF</h1>            
             <div className={styles.drop_down_menù}>               
                     <ul>
-                        <li className={styles.go_to}><a href="#" onClick={handleMenù}> Go to...</a><img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/></li>
+                        <li className={styles.go_to}><a href="#" onClick={handleMenù}>Go to... <FontAwesomeIcon className={styles.icon} icon={faBars} /></a></li>
                             {isMenuVisible && (
                             <ul className={styles.link_menu}>
                                 <li key="Home"><Link href='/'><a>Home</a></Link></li>
-                                <li key="Collection"><Link href='/collection'><a>Collection</a></Link></li>
+                                <li key="Collection"><Link href='/collection'><a> Collection</a></Link></li>
                                 <li key="VirtualShowroom"><Link href='/virtualShowroom'><a>VirtualShowRoom</a></Link></li>
                                 <li key="Shop"><Link href='/shop'><a>Shop</a></Link></li> 
                             </ul>)}                          

@@ -1,0 +1,151 @@
+
+@use "./../../libs/variables.scss";
+@use "./../../libs/mixins.scss";
+
+
+.wrapper_header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 30px;
+    @include mixins.flexContainer(row, space-between, center, 35px);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    transition: all 0.35s ease-out;
+
+    img {
+        margin: 15px 0 0;
+        width: 300px;
+    } 
+    
+}
+
+
+
+.nav {
+    position: fixed;
+    top: 50;
+    width: 100%;
+    height: 50px;
+    
+}
+
+.list {
+    list-style-type: none;
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.items {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn {
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    padding: 5px;
+    color: #000;
+    font-size: 18px;
+}
+
+
+.searchBox{
+    position:fixed;
+    top: 60px;
+    right: 50px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.searchBox:hover > .searchTxt {
+width:200px;
+}
+
+
+
+.searchBtn{
+    color: blue;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.searchTxt{
+    border: none;
+    background-color: none;
+    outline: none;
+    float: left;
+    padding: 0;    
+    font-size: 16px;
+    transition: 0.4s ease;
+    width: 0px;
+}
+
+
+@media screen and (max-width: 480px){
+
+    .wrapper_header{
+        img{
+            position: fixed;
+            top: 0;
+            width: 150px;
+            left: calc(50% - 75px);
+        }
+        
+        
+    }
+
+
+    .list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: violet;
+        flex-direction: column;
+        height: auto;  
+        width: 200px;     
+        
+        
+    }
+    .items:nth-child(1){
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        margin-top: 50px;
+    }
+    .items {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        text-align: left;
+        
+        margin-right: 0px;
+        padding: 20px 0;
+    }
+    .btn {
+        display: block;
+    }
+
+    .searchBox{
+        top:20px;
+        right:0px;
+    }
+    
+
+}

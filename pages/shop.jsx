@@ -3,7 +3,7 @@ import { useEffect } from 'react/cjs/react.development';
 import LayoutDefault from './../layout/index';
 import styles from './../styles/Shop.module.scss'
 import { useState } from 'react';
-import { photoData } from '../photoData';
+// import { photoData } from '../photoData';
 import axios from 'axios';
 
 export default function Shop() {
@@ -45,6 +45,7 @@ export default function Shop() {
         */}
 
         {/*API*/}
+
         <div >
             <ul className={styles.productsWrapper}>
                 {               
