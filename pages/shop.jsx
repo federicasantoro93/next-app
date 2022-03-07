@@ -1,13 +1,14 @@
-
-import { useEffect } from 'react/cjs/react.development';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/cart.slice';
 import LayoutDefault from './../layout/index';
 import styles from './../styles/Shop.module.scss'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import { photoData } from '../photoData';
 import axios from 'axios';
 
-export default function Shop() {
+export default function Shop({ product }) {
 
+    const dispatch = useDispatch();
     const [products, setProducts] = useState([])
 
     const getAllProducts = async() => {
@@ -65,6 +66,12 @@ export default function Shop() {
                                 alt={product.description}/>*/}
                             <h3>{product.name}</h3>
                             <h3>€{product.price}</h3>   
+                            <button
+                                onClick={() => dispatch(addToCart(product))}
+                                className={styles.button}
+                            >
+                                Add to Cart
+                            </button>
                         </li> 
                     ))
                 }
