@@ -96,8 +96,7 @@ export default function NavBar() {
             <div className={styles.searchBox}>
                 <input type="text" placeholder="Type to Search..." className={styles.searchTxt}></input>
                 <a className={styles.searchBtn} href='#'><FontAwesomeIcon className={styles.angleIcons} icon={faSearch} /></a>
-            </div>
-            
+            </div>        
 
 
         </div>
