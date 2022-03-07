@@ -36,7 +36,7 @@ export default function Cart() {
                         <h2>You have {cart.length} articles in your cart</h2>
                         </div>
                             {cart.map((item) => ( 
-                                <li className={styles.productCard} key={item.name}>                                
+                                <li className={styles.productCard} key={item.id}>                                
                                     <div className={styles.image}>
                                         <img src={item.iamge} height="90" width="65" />
                                     </div>
