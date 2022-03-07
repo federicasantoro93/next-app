@@ -35,10 +35,10 @@ export default function Cart() {
                         <h1>Cart</h1>
                         <h2>You have {cart.length} articles in your cart</h2>
                         </div>
-                            {cart.map((item) => (
-                                <div className={styles.body}>
+                            {cart.map((item) => ( 
+                                <li className={styles.productCard} key={item.name}>                                
                                     <div className={styles.image}>
-                                        <img src={item.image} height="90" width="65" />
+                                        <img src={item.iamge} height="90" width="65" />
                                     </div>
                                     <p>{item.description}</p>    
                                     <p>$ {item.price}</p>                            
@@ -53,7 +53,7 @@ export default function Cart() {
                                 <button onClick={() => dispatch(removeFromCart(item.id))}>
                                     x
                                 </button>   
-                        </div>
+                        </li>
                         ))}
                         <h2>Total: $ {getTotalPrice()}</h2>
                     </>
