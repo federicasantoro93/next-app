@@ -27,12 +27,17 @@ function DefaultLayout({children}){
                                 <li key="Collection"><Link href='/collection'><a> Collection</a></Link></li>
                                 <li key="VirtualShowroom"><Link href='/virtualShowroom'><a>VirtualShowRoom</a></Link></li>
                                 <li key="Shop"><Link href='/shop'><a>Shop</a></Link></li> 
+                                <li key="Cart"><Link href='/cart'><a>Cart</a></Link></li> 
+
                             </ul>)}                          
                     </ul>
             </div>
         </div>
         <main>{children}</main>
-        <div className={styles.footer}></div>
+        <div className={styles.footer}>
+        <p>Copyright Federica Santoro{' '}</p>
+        <p>{new Date().getFullYear()}</p>
+        </div>
         </>
     );
 }
